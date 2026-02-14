@@ -40,7 +40,7 @@ install(TARGETS zlog
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-install(FILES zlog.h
+install(FILES zlog.h zlog_cpp.h
     DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
 

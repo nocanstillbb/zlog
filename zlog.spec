@@ -1,5 +1,5 @@
 Name:           zlog
-Version:        1.2.8
+Version:        1.2.9
 Release:        1
 Summary:        zlog logger framework
 
@@ -21,6 +21,7 @@ make clean all
 install -d '%{buildroot}/usr/include'
 install -d '%{buildroot}/usr/lib'
 cp src/zlog.h '%{buildroot}/usr/include/zlog.h'
+cp src/zlog_cpp.h '%{buildroot}/usr/include/zlog_cpp.h'
 cp src/libzlog.a '%{buildroot}/usr/lib/libzlog.a'
 cp src/libzlog.so.1.2 '%{buildroot}/usr/lib/libzlog.so.1.2'
 ln -sf /usr/lib/libzlog.so.1.2 '%{buildroot}/usr/lib/libzlog.so.1'
@@ -30,6 +31,7 @@ ln -sf /usr/lib/libzlog.so.1.2 '%{buildroot}/usr/lib/libzlog.so'
 
 %files
 /usr/include/zlog.h
+/usr/include/zlog_cpp.h
 /usr/lib/libzlog.a
 /usr/lib/libzlog.so
 /usr/lib/libzlog.so.1
